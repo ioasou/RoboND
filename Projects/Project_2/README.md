@@ -3,7 +3,7 @@ The purpose of this project is to develop a robot that can chase a white ball in
 
 ### Directory Structure
 ```
-	├───catkin_ws
+	    ├───catkin_ws
 		├───src
 		    ├── my_robot                       # my_robot package                   
 		    │   ├── launch                     # launch folder for launch files   
@@ -15,7 +15,9 @@ The purpose of this project is to develop a robot that can chase a white ball in
 		    │   │   ├── my_robot.gazebo
 		    │   │   ├── my_robot.xacro
 		    │   ├── world                      # world folder for world files
-		    │   │   ├── <yourworld>.world
+		    │   │   ├── project_1_ball.world
+	    	    │   │   ├── project_1.world
+		    │   │   ├── empty.world
 		    │   ├── CMakeLists.txt             # compiler instructions
 		    │   ├── package.xml                # package info
 		    ├── ball_chaser                    # ball_chaser package                   
@@ -23,7 +25,7 @@ The purpose of this project is to develop a robot that can chase a white ball in
 		    │   │   ├── ball_chaser.launch
 		    │   ├── src                        # source folder for C++ scripts
 		    │   │   ├── drive_bot.cpp
-		    │   │   ├── process_images.cpp
+		    │   │   ├── process_image.cpp
 		    │   ├── srv                        # service folder for ROS services
 		    │   │   ├── DriveToTarget.srv
 		    │   ├── CMakeLists.txt             # compiler instructions
