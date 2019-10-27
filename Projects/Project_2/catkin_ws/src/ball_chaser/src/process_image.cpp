@@ -52,13 +52,13 @@ void process_image_callback(const sensor_msgs::Image img)
     angular_z = -0.5;
     } 
     else if (ball_position != -1) 
-    { // move forward
+    { // move forwarddrive_robot
     linear_x = 0.5;
     }
-    else if (ball_position == -1) 
-    { // look around to find the ball - CAN BE FURTHER IMPROVED IN FUTURE
-    angular_z = 0.5;
-    }
+    // else if (ball_position == -1) 
+    // { // look around to find the ball - CAN BE FURTHER IMPROVED IN FUTURE
+    // angular_z = 0.5;
+    // }
              
     // send request to drive_robot service
     drive_robot(linear_x, angular_z); 
