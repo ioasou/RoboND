@@ -35,7 +35,7 @@ void process_image_callback(const sensor_msgs::Image img)
     // look for ball
     int ball_position = -1; 
     for (int i = 0; i < img.height * img.step; i++) {
-    if (img.data[i] == white_pixel) {
+    if ((img.data[i] == white_pixel) and (img.data[i+1] == white_pixel) and (img.data[i+2] == white_pixel)) {
       ball_position = i % img.step; // expessed in ratio (0.5 is centre)
       break;
     } 
