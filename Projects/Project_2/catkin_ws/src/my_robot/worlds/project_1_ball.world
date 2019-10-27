@@ -1722,7 +1722,7 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    <model name='my_robot'>
+<!--     <model name='my_robot'>
       <link name='robot_footprint'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <inertial>
@@ -2151,7 +2151,7 @@
         <robotNamespace>/</robotNamespace>
       </plugin>
       <pose frame=''>0 0 0 0 -0 0</pose>
-    </model>
+    </model> -->
     <model name='my_ball'>
       <link name='link'>
         <inertial>
