@@ -1,19 +1,11 @@
 FROM ros:kinetic-ros-base
 
-# install bootstrap tools
+# install additional ros packages
 RUN apt-get update && apt-get install --no-install-recommends -y \
-    ros-kinetic-gazebo-* \
+    ros-kinetic-gazebo-* ros-kinetic-rviz ros-kinetic-xacro ros-kinetic-navigation ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-amcl\
   && rm -rf /var/lib/apt/lists/*
 
-# install rviz
+# install matplotlib for c++
 RUN apt-get update && apt-get install --no-install-recommends -y \
-    ros-kinetic-rviz \
+    python-matplotlib python-numpy python2.7-dev \
   && rm -rf /var/lib/apt/lists/*
-
-# install xacro
-RUN apt-get update && apt-get install --no-install-recommends -y \
-    ros-kinetic-xacro \
-  && rm -rf /var/lib/apt/lists/*
-
-# final update
-RUN apt-get update
