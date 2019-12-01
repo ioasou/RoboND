@@ -82,7 +82,11 @@ $ source devel/setup.bash
 $ rviz -d src/localization/config/rviz_viewer.rviz
 ```
 
-Notice that as the robot moves the particles converge towards the true location of the robot.
+Notice that as the robot moves the particles converge towards the true location of the robot, see images below:
+
+![rviz_t0](https://github.com/ioasou/RoboND/blob/master/Projects/Project_3/results/rviz_t0.png)
+![rviz_t1](https://github.com/ioasou/RoboND/blob/master/Projects/Project_3/results/rviz_t1.png)
+![rviz_t2](https://github.com/ioasou/RoboND/blob/master/Projects/Project_3/results/rviz_t1.png)
 
 ##### Important Note
 [Dockerfile](https://github.com/ioasou/RoboND/blob/master/Docker/Dockerfile) can be used for setting up ROS and all required dependencies. 
