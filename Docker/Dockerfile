@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libignition-math2-dev protobuf-compiler \
   && rm -rf /var/lib/apt/lists/*
 
-# install protobuf
+# install rtabmap-ros
 RUN apt-get update && apt-get install --no-install-recommends -y \
     ros-kinetic-rtabmap-ros \
   && rm -rf /var/lib/apt/lists/*
