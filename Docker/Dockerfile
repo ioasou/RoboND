@@ -24,3 +24,17 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 RUN apt-get update && apt-get install --no-install-recommends -y \
     ros-kinetic-rtabmap-ros \
   && rm -rf /var/lib/apt/lists/*
+
+# install gmapping
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    ros-kinetic-gmapping \
+  && rm -rf /var/lib/apt/lists/*
+
+# fix realsense issues
+COPY fix_librealsense.sh /
+RUN chmod +x /fix_librealsense.sh && /fix_librealsense.sh
+
+# install turtlebot packages
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    ros-kinetic-turtlebot* \
+  && rm -rf /var/lib/apt/lists/*
