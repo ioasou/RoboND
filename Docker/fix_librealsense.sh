@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## ref: https://github.com/IntelRealSense/librealsense/issues/4781
+
 # basic container setup
 apt-get update
 apt-get install -y lsb-release
