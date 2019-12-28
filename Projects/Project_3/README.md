@@ -69,7 +69,7 @@ $ roslaunch my_robot world.launch
 #### Step 3 Run AMCL package
 ```sh
 $ Ctrl+Alt+T
-$ cd /home/{user}/workspace/RoboND/Projects/Project_2/catkin_ws
+$ cd /home/{user}/workspace/RoboND/Projects/Project_3/catkin_ws
 $ source devel/setup.bash
 $ roslaunch localization amcl.launch
 ```
