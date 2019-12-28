@@ -38,3 +38,8 @@ RUN chmod +x /fix_librealsense.sh && /fix_librealsense.sh
 RUN apt-get update && apt-get install --no-install-recommends -y \
     ros-kinetic-turtlebot* \
   && rm -rf /var/lib/apt/lists/*
+
+# install xterm
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    xterm \
+  && rm -rf /var/lib/apt/lists/*
