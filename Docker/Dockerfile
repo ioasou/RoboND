@@ -43,3 +43,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 RUN apt-get update && apt-get install --no-install-recommends -y \
     xterm \
   && rm -rf /var/lib/apt/lists/*
+
+# install actionlib
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    ros-kinetic-actionlib* \
+  && rm -rf /var/lib/apt/lists/*
