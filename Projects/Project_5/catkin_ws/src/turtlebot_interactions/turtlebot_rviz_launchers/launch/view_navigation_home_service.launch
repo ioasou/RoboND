@@ -1,0 +1,6 @@
+<!--
+  Used for visualising the turtlebot while building a map or navigating with the ros navistack. - for HOME SERVICE Udacity project
+ -->
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d /home/user/workspace/RoboND/Projects/Project_5/catkin_ws/src/rvizConfig/home_service.rviz"/>
+</launch>
